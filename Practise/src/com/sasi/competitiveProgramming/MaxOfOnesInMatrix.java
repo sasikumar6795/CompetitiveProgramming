@@ -4,9 +4,9 @@ public class MaxOfOnesInMatrix {
 
 	public static void main(String[] args) {
 		
-		int mat[][] = {{0, 0, 1},
-						 {0, 1, 1},
-                         {1, 1, 1}
+		int mat[][] = {{1, 0, 0},
+						 {0, 0, 1},
+                         {1, 0, 1}
 					   };
 		int n= mat.length;
 		System.out.println(maxNoOfOnes(mat, n));
@@ -23,7 +23,7 @@ public class MaxOfOnesInMatrix {
 				j--;
 			}
 		}
-		return row;
+		return row+1;
 		
 	}
 
